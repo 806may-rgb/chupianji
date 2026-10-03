@@ -1,0 +1,893 @@
+{
+ "clients": [
+  {
+   "short": "史塔克",
+   "slug": "stark",
+   "name": "社團法人中華民國史塔克身障平權協會",
+   "color": "#258791",
+   "dark": "#144A50",
+   "slogan": "陪家長，也推制度",
+   "classes": [
+    "美術才藝班",
+    "籃球體適能班",
+    "沖繩三線音樂課程",
+    "理監事會議",
+    "家長工作坊",
+    "志工培訓",
+    "校園宣導",
+    "講座"
+   ],
+   "templates": [
+    {
+     "id": "t01",
+     "label": "美術・糖果粉彩",
+     "keys": [
+      "美術",
+      "畫畫",
+      "才藝",
+      "黏土",
+      "繪畫"
+     ],
+     "png": "images/stark/t01.png",
+     "thumb": "images/stark/t01-thumb.jpg",
+     "top": 445,
+     "bot": 1737,
+     "left": 0,
+     "right": 1080,
+     "matte": "#D4477E",
+     "shiftY": 4,
+     "dateSpot": [
+      352,
+      344
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t02",
+     "label": "美術・薄荷天空",
+     "keys": [],
+     "png": "images/stark/t02.png",
+     "thumb": "images/stark/t02-thumb.jpg",
+     "top": 445,
+     "bot": 1737,
+     "left": 0,
+     "right": 1080,
+     "matte": "#2F8FA8",
+     "shiftY": 4,
+     "dateSpot": [
+      352,
+      344
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t03",
+     "label": "美術・奶油暖陽",
+     "keys": [],
+     "png": "images/stark/t03.png",
+     "thumb": "images/stark/t03-thumb.jpg",
+     "top": 445,
+     "bot": 1737,
+     "left": 0,
+     "right": 1080,
+     "matte": "#D9603A",
+     "shiftY": 4,
+     "dateSpot": [
+      352,
+      344
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t04",
+     "label": "籃球・精簡",
+     "keys": [
+      "籃球",
+      "體適能"
+     ],
+     "png": "images/stark/t04.png",
+     "thumb": "images/stark/t04-thumb.jpg",
+     "top": 568,
+     "bot": 1724,
+     "left": 0,
+     "right": 1080,
+     "matte": "#123A5A",
+     "shiftY": 0,
+     "dateSpot": [
+      12,
+      1748
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t05",
+     "label": "籃球・招生（含報名）",
+     "keys": [],
+     "png": "images/stark/t05.png",
+     "thumb": "images/stark/t05-thumb.jpg",
+     "top": 456,
+     "bot": 1724,
+     "left": 0,
+     "right": 1080,
+     "matte": "#123A5A",
+     "shiftY": 0,
+     "dateSpot": [
+      12,
+      1748
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t06",
+     "label": "籃球・弧線精簡",
+     "keys": [],
+     "png": "images/stark/t06.png",
+     "thumb": "images/stark/t06-thumb.jpg",
+     "top": 470,
+     "bot": 1706,
+     "left": 0,
+     "right": 1080,
+     "matte": "#123A5A",
+     "shiftY": 5,
+     "dateSpot": [
+      12,
+      1842
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t07",
+     "label": "籃球・弧線招生",
+     "keys": [],
+     "png": "images/stark/t07.png",
+     "thumb": "images/stark/t07-thumb.jpg",
+     "top": 560,
+     "bot": 1706,
+     "left": 0,
+     "right": 1080,
+     "matte": "#123A5A",
+     "shiftY": 0,
+     "dateSpot": [
+      12,
+      1842
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t08",
+     "label": "三線・榻榻米綠",
+     "keys": [
+      "三線",
+      "沖繩"
+     ],
+     "png": "images/stark/t08.png",
+     "thumb": "images/stark/t08-thumb.jpg",
+     "top": 568,
+     "bot": 1808,
+     "left": 0,
+     "right": 1080,
+     "matte": "#5F7346",
+     "shiftY": 0,
+     "dateSpot": [
+      12,
+      1852
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t09",
+     "label": "三線・溫暖木質",
+     "keys": [],
+     "png": "images/stark/t09.png",
+     "thumb": "images/stark/t09-thumb.jpg",
+     "top": 568,
+     "bot": 1808,
+     "left": 0,
+     "right": 1080,
+     "matte": "#7A4B2A",
+     "shiftY": 0,
+     "dateSpot": [
+      12,
+      1852
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t10",
+     "label": "三線・琉球海藍",
+     "keys": [],
+     "png": "images/stark/t10.png",
+     "thumb": "images/stark/t10-thumb.jpg",
+     "top": 568,
+     "bot": 1808,
+     "left": 0,
+     "right": 1080,
+     "matte": "#2E6C7E",
+     "shiftY": 0,
+     "dateSpot": [
+      12,
+      1852
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t11",
+     "label": "框式紀錄・藍綠",
+     "keys": [
+      "會議",
+      "講座",
+      "訪談",
+      "理監事"
+     ],
+     "png": "images/stark/t11.png",
+     "thumb": "images/stark/t11-thumb.jpg",
+     "top": 210,
+     "bot": 1590,
+     "left": 32,
+     "right": 1048,
+     "matte": "#258791",
+     "shiftY": 0,
+     "dateSpot": [
+      12,
+      1590
+     ],
+     "boxes": [
+      {
+       "x": 270,
+       "y": 36,
+       "w": 770,
+       "h": 150,
+       "text": "@title",
+       "maxEm": 88
+      }
+     ]
+    },
+    {
+     "id": "t12",
+     "label": "框式紀錄・螢光綠",
+     "keys": [],
+     "png": "images/stark/t12.png",
+     "thumb": "images/stark/t12-thumb.jpg",
+     "top": 210,
+     "bot": 1590,
+     "left": 32,
+     "right": 1048,
+     "matte": "#C8FF1E",
+     "shiftY": 0,
+     "dateSpot": [
+      12,
+      1590
+     ],
+     "boxes": [
+      {
+       "x": 270,
+       "y": 36,
+       "w": 770,
+       "h": 150,
+       "text": "@title",
+       "maxEm": 88,
+       "color": "#10160A"
+      }
+     ]
+    },
+    {
+     "id": "t13",
+     "label": "斜切動勢・藍綠",
+     "keys": [
+      "活動",
+      "運動",
+      "招生"
+     ],
+     "png": "images/stark/t13.png",
+     "thumb": "images/stark/t13-thumb.jpg",
+     "top": 470,
+     "bot": 1480,
+     "left": 0,
+     "right": 1080,
+     "matte": "#258791",
+     "shiftY": 40,
+     "dateSpot": [
+      12,
+      336
+     ],
+     "boxes": [
+      {
+       "x": 56,
+       "y": 50,
+       "w": 760,
+       "h": 270,
+       "text": "@title",
+       "maxEm": 120
+      }
+     ]
+    },
+    {
+     "id": "t14",
+     "label": "斜切動勢・螢光綠",
+     "keys": [],
+     "png": "images/stark/t14.png",
+     "thumb": "images/stark/t14-thumb.jpg",
+     "top": 470,
+     "bot": 1480,
+     "left": 0,
+     "right": 1080,
+     "matte": "#10160A",
+     "shiftY": 40,
+     "dateSpot": [
+      12,
+      336
+     ],
+     "boxes": [
+      {
+       "x": 56,
+       "y": 50,
+       "w": 760,
+       "h": 270,
+       "text": "@title",
+       "maxEm": 120,
+       "color": "#10160A"
+      }
+     ]
+    },
+    {
+     "id": "t15",
+     "label": "標誌在上・藍綠",
+     "keys": [],
+     "png": "images/stark/t15.png",
+     "thumb": "images/stark/t15-thumb.jpg",
+     "top": 542,
+     "bot": 1900,
+     "left": 0,
+     "right": 1080,
+     "matte": "#0E6E77",
+     "shiftY": 10,
+     "dateSpot": [
+      184,
+      132
+     ],
+     "boxes": [
+      {
+       "x": 40,
+       "y": 200,
+       "w": 1000,
+       "h": 260,
+       "text": "@title",
+       "maxEm": 130
+      },
+      {
+       "x": 40,
+       "y": 470,
+       "w": 1000,
+       "h": 72,
+       "text": "@slogan",
+       "maxEm": 44,
+       "stroke": ""
+      }
+     ]
+    },
+    {
+     "id": "t16",
+     "label": "標誌在上・綠色",
+     "keys": [],
+     "png": "images/stark/t16.png",
+     "thumb": "images/stark/t16-thumb.jpg",
+     "top": 542,
+     "bot": 1900,
+     "left": 0,
+     "right": 1080,
+     "matte": "#8CC63F",
+     "shiftY": 10,
+     "dateSpot": [
+      184,
+      132
+     ],
+     "boxes": [
+      {
+       "x": 40,
+       "y": 200,
+       "w": 1000,
+       "h": 260,
+       "text": "@title",
+       "maxEm": 130
+      },
+      {
+       "x": 40,
+       "y": 470,
+       "w": 1000,
+       "h": 72,
+       "text": "@slogan",
+       "maxEm": 44,
+       "stroke": ""
+      }
+     ]
+    },
+    {
+     "id": "t17",
+     "label": "白底協會名・藍綠",
+     "keys": [],
+     "png": "images/stark/t17.png",
+     "thumb": "images/stark/t17-thumb.jpg",
+     "top": 530,
+     "bot": 1660,
+     "left": 0,
+     "right": 1080,
+     "matte": "#0E6E77",
+     "shiftY": 0,
+     "dateSpot": [
+      524,
+      1668
+     ],
+     "boxes": [
+      {
+       "x": 40,
+       "y": 196,
+       "w": 1000,
+       "h": 250,
+       "text": "@title",
+       "maxEm": 125
+      },
+      {
+       "x": 40,
+       "y": 458,
+       "w": 1000,
+       "h": 72,
+       "text": "@slogan",
+       "maxEm": 44,
+       "stroke": ""
+      },
+      {
+       "x": 56,
+       "y": 1692,
+       "w": 452,
+       "h": 58,
+       "text": "史塔克身障平權協會",
+       "maxEm": 30,
+       "stroke": ""
+      },
+      {
+       "x": 56,
+       "y": 1766,
+       "w": 968,
+       "h": 110,
+       "text": "@name",
+       "maxEm": 46,
+       "stroke": ""
+      }
+     ]
+    },
+    {
+     "id": "t18",
+     "label": "白底協會名・綠色",
+     "keys": [],
+     "png": "images/stark/t18.png",
+     "thumb": "images/stark/t18-thumb.jpg",
+     "top": 530,
+     "bot": 1660,
+     "left": 0,
+     "right": 1080,
+     "matte": "#8CC63F",
+     "shiftY": 0,
+     "dateSpot": [
+      524,
+      1668
+     ],
+     "boxes": [
+      {
+       "x": 40,
+       "y": 196,
+       "w": 1000,
+       "h": 250,
+       "text": "@title",
+       "maxEm": 125
+      },
+      {
+       "x": 40,
+       "y": 458,
+       "w": 1000,
+       "h": 72,
+       "text": "@slogan",
+       "maxEm": 44,
+       "stroke": ""
+      },
+      {
+       "x": 56,
+       "y": 1692,
+       "w": 452,
+       "h": 58,
+       "text": "史塔克身障平權協會",
+       "maxEm": 30,
+       "stroke": ""
+      },
+      {
+       "x": 56,
+       "y": 1766,
+       "w": 968,
+       "h": 110,
+       "text": "@name",
+       "maxEm": 46,
+       "stroke": ""
+      }
+     ]
+    },
+    {
+     "id": "t19",
+     "label": "姓名條在下・藍綠",
+     "keys": [],
+     "png": "images/stark/t19.png",
+     "thumb": "images/stark/t19-thumb.jpg",
+     "top": 338,
+     "bot": 1660,
+     "left": 0,
+     "right": 1080,
+     "matte": "#0E6E77",
+     "shiftY": 0,
+     "dateSpot": [
+      524,
+      1668
+     ],
+     "boxes": [
+      {
+       "x": 40,
+       "y": 24,
+       "w": 1000,
+       "h": 220,
+       "text": "@title",
+       "maxEm": 120
+      },
+      {
+       "x": 40,
+       "y": 268,
+       "w": 1000,
+       "h": 70,
+       "text": "@slogan",
+       "maxEm": 44,
+       "stroke": ""
+      },
+      {
+       "x": 56,
+       "y": 1692,
+       "w": 452,
+       "h": 58,
+       "text": "史塔克身障平權協會",
+       "maxEm": 30,
+       "stroke": ""
+      },
+      {
+       "x": 56,
+       "y": 1766,
+       "w": 760,
+       "h": 110,
+       "text": "@name",
+       "maxEm": 42,
+       "stroke": ""
+      }
+     ]
+    },
+    {
+     "id": "t20",
+     "label": "姓名條在下・綠色",
+     "keys": [],
+     "png": "images/stark/t20.png",
+     "thumb": "images/stark/t20-thumb.jpg",
+     "top": 338,
+     "bot": 1660,
+     "left": 0,
+     "right": 1080,
+     "matte": "#8CC63F",
+     "shiftY": 0,
+     "dateSpot": [
+      524,
+      1668
+     ],
+     "boxes": [
+      {
+       "x": 40,
+       "y": 24,
+       "w": 1000,
+       "h": 220,
+       "text": "@title",
+       "maxEm": 120
+      },
+      {
+       "x": 40,
+       "y": 268,
+       "w": 1000,
+       "h": 70,
+       "text": "@slogan",
+       "maxEm": 44,
+       "stroke": ""
+      },
+      {
+       "x": 56,
+       "y": 1692,
+       "w": 452,
+       "h": 58,
+       "text": "史塔克身障平權協會",
+       "maxEm": 30,
+       "stroke": ""
+      },
+      {
+       "x": 56,
+       "y": 1766,
+       "w": 760,
+       "h": 110,
+       "text": "@name",
+       "maxEm": 42,
+       "stroke": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "short": "心教育",
+   "slug": "xin",
+   "name": "新北市三重區心教育關懷協會",
+   "color": "#E83460",
+   "dark": "#741A30",
+   "slogan": "一起讓愛在社區發光",
+   "classes": [
+    "理監事會議",
+    "新春團拜",
+    "讓愛上餐桌",
+    "觀音山健走趣",
+    "感恩晚會",
+    "校園關懷",
+    "志工招募",
+    "頒獎表揚",
+    "社區長者關懷",
+    "年度回顧",
+    "講座研習"
+   ],
+   "templates": [
+    {
+     "id": "t01",
+     "label": "理監事會議",
+     "keys": [
+      "理監事",
+      "會議",
+      "理事",
+      "監事"
+     ],
+     "png": "images/xin/t01.png",
+     "thumb": "images/xin/t01-thumb.jpg",
+     "top": 232,
+     "bot": 1690,
+     "left": 0,
+     "right": 1080,
+     "matte": "#182E52",
+     "shiftY": 44,
+     "dateSpot": [
+      12,
+      1798
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t02",
+     "label": "新春團拜",
+     "keys": [
+      "新春",
+      "團拜",
+      "春節",
+      "過年"
+     ],
+     "png": "images/xin/t02.png",
+     "thumb": "images/xin/t02-thumb.jpg",
+     "top": 282,
+     "bot": 1690,
+     "left": 0,
+     "right": 1080,
+     "matte": "#C41E2E",
+     "shiftY": 44,
+     "dateSpot": [
+      12,
+      1798
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t03",
+     "label": "讓愛上餐桌",
+     "keys": [
+      "餐桌",
+      "共餐",
+      "讓愛"
+     ],
+     "png": "images/xin/t03.png",
+     "thumb": "images/xin/t03-thumb.jpg",
+     "top": 300,
+     "bot": 1690,
+     "left": 0,
+     "right": 1080,
+     "matte": "#E8762B",
+     "shiftY": 44,
+     "dateSpot": [
+      12,
+      1798
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t04",
+     "label": "觀音山健走趣",
+     "keys": [
+      "健走",
+      "觀音山",
+      "戶外",
+      "登山"
+     ],
+     "png": "images/xin/t04.png",
+     "thumb": "images/xin/t04-thumb.jpg",
+     "top": 250,
+     "bot": 1690,
+     "left": 0,
+     "right": 1080,
+     "matte": "#1C5438",
+     "shiftY": 49,
+     "dateSpot": [
+      12,
+      1798
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t05",
+     "label": "感恩晚會",
+     "keys": [
+      "晚會",
+      "感恩",
+      "尾牙"
+     ],
+     "png": "images/xin/t05.png",
+     "thumb": "images/xin/t05-thumb.jpg",
+     "top": 234,
+     "bot": 1690,
+     "left": 0,
+     "right": 1080,
+     "matte": "#7B1E3A",
+     "shiftY": 44,
+     "dateSpot": [
+      12,
+      1798
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t06",
+     "label": "校園關懷",
+     "keys": [
+      "校園",
+      "學校"
+     ],
+     "png": "images/xin/t06.png",
+     "thumb": "images/xin/t06-thumb.jpg",
+     "top": 232,
+     "bot": 1690,
+     "left": 0,
+     "right": 1080,
+     "matte": "#2A7DE1",
+     "shiftY": 49,
+     "dateSpot": [
+      12,
+      1798
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t07",
+     "label": "志工招募",
+     "keys": [
+      "志工",
+      "招募"
+     ],
+     "png": "images/xin/t07.png",
+     "thumb": "images/xin/t07-thumb.jpg",
+     "top": 266,
+     "bot": 1690,
+     "left": 0,
+     "right": 1080,
+     "matte": "#2D2D30",
+     "shiftY": 32,
+     "dateSpot": [
+      12,
+      1798
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t08",
+     "label": "頒獎表揚",
+     "keys": [
+      "頒獎",
+      "表揚",
+      "得獎"
+     ],
+     "png": "images/xin/t08.png",
+     "thumb": "images/xin/t08-thumb.jpg",
+     "top": 232,
+     "bot": 1690,
+     "left": 0,
+     "right": 1080,
+     "matte": "#4E2A84",
+     "shiftY": 49,
+     "dateSpot": [
+      12,
+      1798
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t09",
+     "label": "社區長者關懷",
+     "keys": [
+      "長者",
+      "長輩",
+      "據點",
+      "社區關懷"
+     ],
+     "png": "images/xin/t09.png",
+     "thumb": "images/xin/t09-thumb.jpg",
+     "top": 224,
+     "bot": 1690,
+     "left": 0,
+     "right": 1080,
+     "matte": "#624296",
+     "shiftY": 49,
+     "dateSpot": [
+      12,
+      1798
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t10",
+     "label": "年度回顧",
+     "keys": [
+      "回顧",
+      "年度",
+      "成果"
+     ],
+     "png": "images/xin/t10.png",
+     "thumb": "images/xin/t10-thumb.jpg",
+     "top": 222,
+     "bot": 1774,
+     "left": 70,
+     "right": 1010,
+     "matte": "#E83460",
+     "shiftY": 0,
+     "dateSpot": [
+      80,
+      1798
+     ],
+     "boxes": []
+    },
+    {
+     "id": "t11",
+     "label": "講座研習",
+     "keys": [
+      "講座",
+      "研習",
+      "幹部",
+      "家長會",
+      "說明會",
+      "課程"
+     ],
+     "png": "images/xin/t11.png",
+     "thumb": "images/xin/t11-thumb.jpg",
+     "top": 246,
+     "bot": 1690,
+     "left": 0,
+     "right": 1080,
+     "matte": "#153468",
+     "shiftY": 44,
+     "dateSpot": [
+      12,
+      1798
+     ],
+     "boxes": []
+    }
+   ]
+  }
+ ]
+}
