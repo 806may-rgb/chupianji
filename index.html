@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>粉專出片機・貼文圖網頁版</title>
+<meta name="description" content="照片丟進去，自動套上史塔克、心教育的活動模板與日期，產生 Facebook 貼文圖。照片只在你的手機裡處理，不會上傳。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+
+<header class="site-head">
+  <img src="images/logo.png" alt="" width="56" height="56">
+  <div>
+    <h1>粉專出片機・貼文圖</h1>
+    <p>照片丟進去，自動套上協會模板和日期</p>
+  </div>
+</header>
+
+<main id="main">
+  <p class="privacy"><strong>照片只在你的手機裡處理，不會上傳到任何地方。</strong>拍到孩子的照片，請先確認已取得家長的書面同意。</p>
+
+  <div class="layout">
+    <form id="form" class="controls" novalidate>
+
+      <fieldset>
+        <legend><span class="step">1</span>哪個協會</legend>
+        <div class="choices" id="clientChoices"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="step">2</span>選照片</legend>
+        <label class="file-btn" for="photos">
+          <span class="file-btn-text">從手機選照片</span>
+          <span class="hint">可以一次選很多張，每張出一張圖</span>
+        </label>
+        <input type="file" id="photos" accept="image/*" multiple>
+        <p class="note" id="photoNote">還沒選照片</p>
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="step">3</span>活動資料</legend>
+        <label for="cls">類型／活動 <span class="hint">（決定檔名和畫面上的標題）</span></label>
+        <select id="cls"></select>
+        <div id="clsCustomWrap" hidden>
+          <label for="clsCustom">自己填類型</label>
+          <input type="text" id="clsCustom" maxlength="20" autocomplete="off">
+        </div>
+
+        <label for="date">日期</label>
+        <input type="date" id="date" required>
+
+        <label for="title">標題 <span class="hint">（選填，不填就用類型名）</span></label>
+        <input type="text" id="title" maxlength="20" autocomplete="off">
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="step">4</span>模板 <span class="hint">（不選就照類型自動配）</span></legend>
+        <div class="gallery" id="gallery"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="step">5</span>照片怎麼放</legend>
+        <div class="choices" id="fitChoices">
+          <label class="choice"><input type="radio" name="fit" value="auto" checked><span>自動</span></label>
+          <label class="choice"><input type="radio" name="fit" value="contain"><span>完整不裁</span></label>
+          <label class="choice"><input type="radio" name="fit" value="cover"><span>填滿裁切</span></label>
+        </div>
+        <p class="note">海報、文宣請選「完整不裁」，一個字都不會被裁到。</p>
+      </fieldset>
+    </form>
+
+    <section class="preview" aria-labelledby="pvHead">
+      <h2 id="pvHead">預覽</h2>
+      <div class="pv-box">
+        <canvas id="pv" width="1080" height="1920" role="img" aria-label="預覽圖載入中"></canvas>
+      </div>
+      <p class="note" id="pvInfo"></p>
+      <button type="button" id="go" class="primary" disabled>產生貼文圖</button>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <div id="results" class="results" hidden>
+        <h2>完成的圖</h2>
+        <button type="button" id="share" class="primary" hidden>分享／存到相簿</button>
+        <ul id="resultList"></ul>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <p>社團法人中華民國史塔克身障平權協會</p>
+  <p>新北市三重區忠孝路二段 116 號 9 樓之 6｜<a href="tel:0988308585">0988-308-585</a>｜<a href="mailto:806may@gmail.com">806may@gmail.com</a></p>
+</footer>
+</body>
+</html>
