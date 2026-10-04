@@ -17,15 +17,21 @@ let firstBitmap = null;    // 第一張照片（預覽用）
 const imgCache = new Map();
 
 // ───────── 工具 ─────────
-function loadImg(src) {
-  if (imgCache.has(src)) return imgCache.get(src);
-  const p = new Promise((res, rej) => {
+// 讀圖：失敗會自動再試一次；失敗的結果不記住，下次重新讀（網路不穩、網站剛更新時都會碰到）
+function loadImgOnce(src) {
+  return new Promise((res, rej) => {
     const im = new Image();
     im.onload = () => res(im);
     im.onerror = () => rej(new Error('圖片讀不到：' + src));
     im.src = src;
   });
+}
+function loadImg(src) {
+  if (imgCache.has(src)) return imgCache.get(src);
+  const p = loadImgOnce(src)
+    .catch(() => new Promise((r) => setTimeout(r, 800)).then(() => loadImgOnce(src + (src.includes('?') ? '&' : '?') + 'retry=' + Date.now())));
   imgCache.set(src, p);
+  p.catch(() => imgCache.delete(src));
   return p;
 }
 function hexToRgb(h) { return [1, 3, 5].map((i) => parseInt(h.substr(i, 2), 16)); }
@@ -242,12 +248,13 @@ async function renderPreview() {
     if (ratio === 'feed') ov = to45(ov);
     if (seq !== pvSeq) return;
     const { mode } = compose(img, ov, currentFit(), $('#pv'));
+    if ($('#status').classList.contains('err')) showStatus('');   // 恢復正常就把舊錯誤清掉
     const rTxt = ratio === 'feed' ? '4:5（1080×1350）' : '9:16（1080×1920）';
     const mTxt = mode === 'contain' ? '完整不裁' : '填滿裁切';
     $('#pvInfo').textContent = `模板：${tpl.label}｜比例：${rTxt}｜照片：${mTxt}`;
     $('#pv').setAttribute('aria-label', `預覽：${client.short} ${tpl.label} 模板，標題「${title}」，日期 ${dateText}，比例 ${rTxt}`);
   } catch (e) {
-    showStatus('預覽失敗：' + e.message, true);
+    showStatus('預覽失敗：' + e.message + '。請檢查網路，再換一下模板或重新整理頁面。', true);
   }
 }
 let pvTimer = 0;
