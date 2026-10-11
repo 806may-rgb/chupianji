@@ -171,13 +171,16 @@ function fitMode(imgW, imgH, winW, winH, fit) {
 // ───────── 照片放進框裡（Draw-InFrame）─────────
 function drawInFrame(ctx, img, x, y, w, h, fit, shiftY) {
   const W = img.width, H = img.height;
-  let iw = w - 2 * FRAME_PAD, ih = h - 2 * FRAME_PAD;
+  // 「填滿裁切」：直接填滿到色帶邊，不內縮、不加白框、不往下挪（跟桌面版 2026-10-11 一致）
+  let pad = FRAME_PAD, bdw = FRAME_BORDER;
+  if (fit === 'cover') { pad = 0; bdw = 0; shiftY = 0; }
+  let iw = w - 2 * pad, ih = h - 2 * pad;
   if (iw < 40 || ih < 40) { iw = w; ih = h; }
   const mode = fitMode(W, H, iw, ih, fit);
   let dx, dy, dw, dh;
   ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
   if (mode === 'cover') {
-    dw = iw; dh = ih; dx = x + FRAME_PAD; dy = y + FRAME_PAD + shiftY;
+    dw = iw; dh = ih; dx = x + pad; dy = y + pad + shiftY;
     const s = Math.max(iw / W, ih / H), sw = iw / s, sh = ih / s;
     ctx.drawImage(img, (W - sw) / 2, (H - sh) / 2, sw, sh, dx, dy, dw, dh);
   } else {
@@ -186,9 +189,9 @@ function drawInFrame(ctx, img, x, y, w, h, fit, shiftY) {
     dx = R(x + (w - dw) / 2); dy = R(y + (h - dh) / 2) + shiftY;
     ctx.drawImage(img, dx, dy, dw, dh);
   }
-  if (FRAME_BORDER > 0) {
-    ctx.strokeStyle = 'rgba(255,255,255,0.8824)'; ctx.lineWidth = FRAME_BORDER;
-    ctx.strokeRect(dx + FRAME_BORDER / 2, dy + FRAME_BORDER / 2, dw - FRAME_BORDER, dh - FRAME_BORDER);
+  if (bdw > 0) {
+    ctx.strokeStyle = 'rgba(255,255,255,0.8824)'; ctx.lineWidth = bdw;
+    ctx.strokeRect(dx + bdw / 2, dy + bdw / 2, dw - bdw, dh - bdw);
   }
   return mode;
 }
