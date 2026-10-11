@@ -6,7 +6,7 @@
    "name": "社團法人中華民國史塔克身障平權協會",
    "color": "#258791",
    "dark": "#144A50",
-   "slogan": "陪家長，也推制度",
+   "slogan": "",
    "classes": [
     "美術才藝班",
     "籃球體適能班",
@@ -87,7 +87,7 @@
      ],
      "png": "images/stark/t04.png",
      "thumb": "images/stark/t04-thumb.jpg",
-     "top": 568,
+     "top": 382,
      "bot": 1724,
      "left": 0,
      "right": 1080,
